@@ -15,6 +15,10 @@
 		ADF037F522D332A800A69E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF037F322D332A800A69E9A /* Main.storyboard */; };
 		ADF037F722D332AD00A69E9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF037F622D332AD00A69E9A /* Assets.xcassets */; };
 		ADF037FA22D332AD00A69E9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF037F822D332AD00A69E9A /* LaunchScreen.storyboard */; };
+		D511D1E02375DA9F00D9F45B /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D511D1DF2375DA9F00D9F45B /* ProgressBar.swift */; };
+		D52B320523733C9100EE7B8F /* eggTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52B320423733C9100EE7B8F /* eggTimer.swift */; };
+		D571F22B2379D93600433A3F /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D571F22A2379D93600433A3F /* ButtonView.swift */; };
+		D57BF0F7236F0D0900E2071F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57BF0F6236F0D0900E2071F /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		ADF037F622D332AD00A69E9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADF037F922D332AD00A69E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADF037FB22D332AD00A69E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D511D1DF2375DA9F00D9F45B /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		D52B320423733C9100EE7B8F /* eggTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggTimer.swift; sourceTree = "<group>"; };
+		D571F22A2379D93600433A3F /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		D57BF0F6236F0D0900E2071F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,8 @@
 		ADF037EC22D332A800A69E9A /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
+				D559561D2379CDE700FF6A3F /* Models */,
+				D511D1DE2375DA8300D9F45B /* Views */,
 				ADF037ED22D332A800A69E9A /* AppDelegate.swift */,
 				ADF037EF22D332A800A69E9A /* SceneDelegate.swift */,
 				ADF037F122D332A800A69E9A /* ViewController.swift */,
@@ -71,6 +81,24 @@
 				ADF037FB22D332AD00A69E9A /* Info.plist */,
 			);
 			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		D511D1DE2375DA8300D9F45B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D57BF0F6236F0D0900E2071F /* ContentView.swift */,
+				D511D1DF2375DA9F00D9F45B /* ProgressBar.swift */,
+				D571F22A2379D93600433A3F /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D559561D2379CDE700FF6A3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D52B320423733C9100EE7B8F /* eggTimer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +176,11 @@
 			files = (
 				ADF037F222D332A800A69E9A /* ViewController.swift in Sources */,
 				ADF037EE22D332A800A69E9A /* AppDelegate.swift in Sources */,
+				D52B320523733C9100EE7B8F /* eggTimer.swift in Sources */,
+				D57BF0F7236F0D0900E2071F /* ContentView.swift in Sources */,
+				D511D1E02375DA9F00D9F45B /* ProgressBar.swift in Sources */,
 				ADF037F022D332A800A69E9A /* SceneDelegate.swift in Sources */,
+				D571F22B2379D93600433A3F /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24B9N35YSF;
 				INFOPLIST_FILE = EggTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24B9N35YSF;
 				INFOPLIST_FILE = EggTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
